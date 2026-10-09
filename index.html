@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>El-Bethel Hotel — Bahir Dar</title>
+<meta name="description" content="El-Bethel Hotel, near Bahir Dar Stadium — comfortable rooms, friendly service, easy access to the city's main sights.">
+<meta property="og:title" content="El-Bethel Hotel — Bahir Dar">
+<meta property="og:description" content="A warm welcome in the heart of Bahir Dar.">
+<meta property="og:type" content="hotel">
+<link rel="stylesheet" href="/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org", "@type": "Hotel", "name": "El-Bethel Hotel",
+  "address": {"@type":"PostalAddress","streetAddress":"Kebele 14","addressLocality":"Bahir Dar","addressCountry":"ET"},
+  "telephone": "+251950111777",
+  "amenityFeature": [
+    {"@type":"LocationFeatureSpecification","name":"Free Wi-Fi"},
+    {"@type":"LocationFeatureSpecification","name":"24-hour front desk"},
+    {"@type":"LocationFeatureSpecification","name":"Restaurant"},
+    {"@type":"LocationFeatureSpecification","name":"Airport pickup on request"}
+  ]
+}
+</script>
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="#top"><span class="brand-text"><b>EL-BETHEL</b><small>HOTEL</small></span></a>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#rooms">Rooms</a>
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a class="nav-cta" href="#book">Book a room <span>↗</span></a>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="hero-photo" role="img" aria-label="El-Bethel Hotel, Bahir Dar"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="eyebrow">BAHIR DAR · ETHIOPIA</p>
+    <h1>A warm welcome<br><em>in the heart of Bahir Dar.</em></h1>
+    <p class="lead">Near Bahir Dar Stadium — comfortable rooms, friendly service, and easy access to the city's main sights.</p>
+    <a class="button" href="#book">Reserve your stay <span>→</span></a>
+  </div>
+  <div class="scroll">SCROLL DOWN</div>
+</section>
+
+<section id="about" class="about section">
+  <div class="about-image" role="img" aria-label="El-Bethel Hotel interior"></div>
+  <div class="about-copy">
+    <p class="eyebrow">ABOUT US</p>
+    <h2>A proper stay, not just a bed for the night.</h2>
+    <p>El-Bethel Hotel is located in Bahir Dar, one of Ethiopia's most beautiful cities, known for Lake Tana and its calm, green streets. As a hotel near Bahir Dar Stadium, we're easy to find and close to the city's main sights. Every room is cleaned and checked before you ever see it, and our team is around from early morning to late night if you need anything at all.</p>
+    <ul class="about-list">
+      <li>Free Wi-Fi and hot water, all day, every room</li>
+      <li>24-hour front desk and airport pickup on request</li>
+      <li>Restaurant serving local and international dishes</li>
+    </ul>
+  </div>
+</section>
+
+<section id="rooms" class="rooms section">
+  <div class="section-head">
+    <div><p class="eyebrow">OUR ROOMS</p><h2>Choose your room.</h2></div>
+    <p>Clean, comfortable rooms checked before every stay.</p>
+  </div>
+  <div class="room-grid">
+    <article>
+      <div class="room-img img1" role="img" aria-label="Single room"></div>
+      <div><span>SINGLE ROOM</span><h3>1 Guest · 36 ft²</h3><strong>$10 <small>/ night</small></strong></div>
+    </article>
+    <article>
+      <div class="room-img img2" role="img" aria-label="Double room"></div>
+      <div><span>DOUBLE ROOM</span><h3>2 Guests · 35 ft²</h3><strong>$25 <small>/ night</small></strong></div>
+    </article>
+  </div>
+</section>
+
+<section id="book" class="booking section">
+  <div>
+    <p class="eyebrow">DIRECT BOOKING</p>
+    <h2>Your room,<br>reserved simply.</h2>
+    <p>Select your dates, room type and exact available room number. The system calculates the stay total on the server.</p>
+  </div>
+  <form id="bookingForm">
+    <div class="fields">
+      <label>Check-in<input type="date" id="checkIn" required></label>
+      <label>Check-out<input type="date" id="checkOut" required></label>
+      <label>Room type<select id="roomType"><option>Single</option><option>Double</option></select></label>
+    </div>
+    <button type="button" class="button" id="checkBtn">Check available rooms <span>→</span></button>
+    <div id="availability" class="availability"></div>
+    <div id="guestFields" class="guest-fields hidden">
+      <div class="fields">
+        <label>Full name<input id="fullName" required></label>
+        <label>Phone<input id="phone" required></label>
+        <label>Email (optional)<input id="email" type="email"></label>
+      </div>
+      <label>Notes<textarea id="notes" rows="3" placeholder="Optional request"></textarea></label>
+      <div class="total" id="total">Select a room to continue.</div>
+      <button class="button" type="submit">Continue to secure payment <span>↗</span></button>
+    </div>
+    <p id="bookingMsg" class="msg"></p>
+    <div id="paymentGate" class="payment-gate hidden">
+      <div class="total" id="payGateTotal"></div>
+      <label>Payment confirmation code<input id="payCode" type="password" autocomplete="off"></label>
+      <button class="button" type="button" id="payGateBtn">Confirm payment <span>→</span></button>
+    </div>
+  </form>
+</section>
+
+<section id="services" class="services section">
+  <p class="eyebrow">WHAT WE OFFER</p>
+  <h2>Our services.</h2>
+  <div class="service-grid">
+    <div><span>01</span><h3>Lake Tana Tours</h3><p>Guided tours to Lake Tana's islands and monasteries.</p></div>
+    <div><span>02</span><h3>Quality Rooms</h3><p>Clean, comfortable rooms checked before every stay.</p></div>
+    <div><span>03</span><h3>Restaurants &amp; Bars</h3><p>Local and international dishes, day and night.</p></div>
+  </div>
+</section>
+
+<section id="gallery" class="gallery section">
+  <div class="section-head"><div><p class="eyebrow">THE HOTEL</p><h2>See El-Bethel.</h2></div></div>
+  <div class="gallery-grid">
+    <div class="g g1" role="img" aria-label="El-Bethel Hotel photo 1"></div>
+    <div class="g g2" role="img" aria-label="El-Bethel Hotel photo 2"></div>
+    <div class="g g3" role="img" aria-label="El-Bethel Hotel photo 3"></div>
+    <div class="g g4" role="img" aria-label="El-Bethel Hotel photo 4"></div>
+  </div>
+</section>
+
+<section id="contact" class="contact section">
+  <div class="section-head"><div><p class="eyebrow">GET IN TOUCH</p><h2>Contact the hotel.</h2></div></div>
+  <div class="contact-grid">
+    <a href="tel:+251950111777" class="contact-card"><span>Phone</span><strong>+251 950 111 777</strong></a>
+    <a href="tel:+251583202599" class="contact-card"><span>Phone</span><strong>058 320 2599</strong></a>
+    <a href="mailto:contact@el-bethelhotel.com" class="contact-card"><span>Email</span><strong>contact@el-bethelhotel.com</strong></a>
+    <div class="contact-card"><span>Address</span><strong>Kebele 14, Bahir Dar — 100m from Sefuri Mall</strong></div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="brand"><span class="brand-text"><b>EL-BETHEL</b><small>HOTEL</small></span></div>
+  <p>Bahir Dar, Ethiopia</p>
+  <a href="/admin.html">Staff access</a>
+</footer>
+<script src="/script.js"></script>
+</body>
+</html>
