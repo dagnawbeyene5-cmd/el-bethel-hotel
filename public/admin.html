@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>El-Bethel Hotel — Staff Portal</title>
+<link rel="stylesheet" href="/admin.css">
+</head>
+<body>
+<div id="loginView" class="login-wrap">
+  <form id="loginForm" class="login-card">
+    <p class="brand">EL-BETHEL <b>HOTEL</b></p>
+    <p class="sub">Staff operations portal</p>
+    <label>Username<input id="username" required></label>
+    <label>Password<input id="password" type="password" required></label>
+    <button class="button" type="submit">Sign in</button>
+    <p id="loginMsg" class="msg"></p>
+  </form>
+</div>
+
+<div id="appView" class="app hidden">
+  <header class="app-nav">
+    <p class="brand">EL-BETHEL <b>HOTEL</b></p>
+    <nav>
+      <button data-view="dashboard" class="active">Dashboard</button>
+      <button data-view="bookings">Bookings</button>
+      <button data-view="rooms">Rooms</button>
+      <button data-view="users" id="usersTabBtn">Users</button>
+    </nav>
+    <button id="logoutBtn" class="ghost">Log out</button>
+  </header>
+
+  <section id="view-dashboard" class="view">
+    <h2>Dashboard</h2>
+    <div class="stat-grid" id="statGrid"></div>
+  </section>
+
+  <section id="view-bookings" class="view hidden">
+    <h2>Bookings</h2>
+    <div id="bookingsTable"></div>
+    <h3>New walk-in booking</h3>
+    <form id="walkInForm" class="fields">
+      <label>Room type<select id="wiType"><option>Single</option><option>Double</option></select></label>
+      <label>Room number<input id="wiRoom" required></label>
+      <label>Check-in<input id="wiCheckIn" type="date" required></label>
+      <label>Check-out<input id="wiCheckOut" type="date" required></label>
+      <label>Full name<input id="wiName" required></label>
+      <label>Phone<input id="wiPhone" required></label>
+      <button class="button" type="submit">Create booking</button>
+    </form>
+    <p id="wiMsg" class="msg"></p>
+  </section>
+
+  <section id="view-rooms" class="view hidden">
+    <h2>Rooms</h2>
+    <div id="roomsTable"></div>
+  </section>
+
+  <section id="view-users" class="view hidden">
+    <h2>Users</h2>
+    <div id="usersTable"></div>
+    <h3>Add staff user</h3>
+    <form id="userForm" class="fields">
+      <label>Username<input id="newUsername" required></label>
+      <label>Password<input id="newPassword" type="password" required></label>
+      <label>Role<select id="newRole"><option>RECEPTION</option><option>FINANCE</option><option>SUPER_ADMIN</option></select></label>
+      <button class="button" type="submit">Create user</button>
+    </form>
+    <p id="userMsg" class="msg"></p>
+  </section>
+</div>
+<script src="/admin.js"></script>
+</body>
+</html>

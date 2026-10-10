@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap');
+*{box-sizing:border-box}body{margin:0;font-family:'DM Sans',sans-serif;background:#eef3f9;color:#0b2340}
+.hidden{display:none!important}
+.login-wrap{min-height:100vh;display:flex;align-items:center;justify-content:center;background:linear-gradient(160deg,#0c3b6e,#1565c0)}
+.login-card{background:#fff;padding:40px 34px;border-radius:10px;width:320px;max-width:90vw;box-shadow:0 20px 50px #0003}
+.brand{font:700 16px 'DM Sans';letter-spacing:.08em;color:#0c3b6e;margin:0 0 4px}
+.brand b{color:#1565c0}
+.sub{font-size:11px;letter-spacing:.1em;color:#5c6b7a;margin:0 0 24px}
+label{display:block;font-size:11px;color:#5c6b7a;font-weight:600;margin-bottom:14px}
+input,select{width:100%;margin-top:6px;padding:11px;border:1px solid #dde6ee;border-radius:4px;font:14px inherit}
+.button{width:100%;border:0;background:#1565c0;color:#fff;padding:13px;border-radius:6px;font:600 13px inherit;cursor:pointer;margin-top:6px}
+.ghost{border:1px solid #fff;background:none;color:#fff;padding:8px 16px;border-radius:100px;cursor:pointer;font:600 12px inherit}
+.msg{color:#c0392b;font-size:12.5px;margin-top:10px}
+.app-nav{display:flex;align-items:center;justify-content:space-between;background:#0c3b6e;padding:16px 4vw;color:#fff}
+.app-nav nav{display:flex;gap:6px}
+.app-nav nav button{background:none;border:0;color:#cfe2f7;padding:8px 14px;border-radius:100px;cursor:pointer;font:600 12.5px inherit}
+.app-nav nav button.active{background:#1565c0;color:#fff}
+.view{padding:30px 4vw}
+.stat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:14px}
+.stat{background:#fff;border:1px solid #dde6ee;border-radius:8px;padding:18px;text-align:center}
+.stat span{display:block;font:700 26px 'DM Sans';color:#1565c0}
+.stat small{color:#5c6b7a;font-size:11px}
+.data-table{width:100%;border-collapse:collapse;margin:16px 0;font-size:13px}
+.data-table th,.data-table td{text-align:left;padding:10px;border-bottom:1px solid #dde6ee}
+.data-table th{color:#5c6b7a;font-size:11px;letter-spacing:.05em}
+.fields{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;max-width:600px;margin-top:16px}
